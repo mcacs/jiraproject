@@ -9,3 +9,8 @@ float adicao(float a, float b) {
 float subtracao(float a, float b) {
     return a - b;
 }
+
+// Função para realizar a multiplicação
+float multiplicacao(float a, float b) {
+    return a * b;
+}
