@@ -24,3 +24,33 @@ float divisao(float a, float b) {
         return 0.0;
     }
 }
+
+int main() {
+    float num1, num2;
+    char operador;
+
+    printf("Digite um operador (+, -, *, /): ");
+    scanf(" %c", &operador);
+
+    printf("Digite dois números: ");
+    scanf("%f %f", &num1, &num2);
+
+    switch (operador) {
+        case '+':
+            printf("Resultado: %.2f\n", adicao(num1, num2));
+            break;
+        case '-':
+            printf("Resultado: %.2f\n", subtracao(num1, num2));
+            break;
+        case '*':
+            printf("Resultado: %.2f\n", multiplicacao(num1, num2));
+            break;
+        case '/':
+            printf("Resultado: %.2f\n", divisao(num1, num2));
+            break;
+        default:
+            printf("Operador inválido!\n");
+    }
+
+    return 0;
+}
