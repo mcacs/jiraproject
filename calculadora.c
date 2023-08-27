@@ -4,3 +4,8 @@
 float adicao(float a, float b) {
     return a + b;
 }
+
+// Função para realizar a subtração
+float subtracao(float a, float b) {
+    return a - b;
+}
